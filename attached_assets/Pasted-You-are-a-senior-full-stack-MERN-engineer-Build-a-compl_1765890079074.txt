@@ -1,0 +1,154 @@
+You are a senior full-stack MERN engineer.
+
+Build a complete FULL-STACK MERN Employee Management Dashboard with the following requirements.
+
+=====================
+PROJECT OVERVIEW
+=====================
+Project Name: Employee Management Dashboard
+
+A professional, production-ready MERN application with secure authentication, employee profiles, attendance tracking, leave management, analytics dashboard, real-time updates, and role-based access control.
+
+The UI should match a modern dark theme dashboard style (similar to SaaS admin panels).
+
+=====================
+TECH STACK (MANDATORY)
+=====================
+Frontend:
+- React (Vite preferred)
+- Tailwind CSS
+- Redux Toolkit
+- Axios
+- React Router
+- JWT-based auth handling
+
+Backend:
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT Authentication
+- bcrypt
+- Socket.io (for real-time updates)
+
+=====================
+USER ROLES
+=====================
+1. Admin
+2. Manager
+3. Employee
+
+Role-based access must be enforced both on backend APIs and frontend routes.
+
+=====================
+FEATURES
+=====================
+
+AUTHENTICATION
+- Register (Admin only can create users)
+- Login
+- JWT access token
+- Secure password hashing (bcrypt)
+- Protected routes
+- Role-based middleware
+
+EMPLOYEE MANAGEMENT
+- Employee CRUD (Admin)
+- Employee profile view/edit
+- Assign role & department
+- Active / inactive status
+
+ATTENDANCE MODULE
+- Daily check-in / check-out
+- Store date, time, duration
+- View attendance history
+- Admin can view all employees attendance
+
+LEAVE MANAGEMENT
+- Apply for leave (Employee)
+- Approve / reject leave (Admin/Manager)
+- Leave types (Sick, Casual, Annual)
+- Leave status tracking
+
+ANALYTICS DASHBOARD
+- Total employees
+- Present today
+- On leave today
+- Attendance charts (basic)
+- Leave stats
+
+REAL-TIME UPDATES
+- Attendance updates via Socket.io
+- Leave approval status updates live
+
+=====================
+DATABASE MODELS
+=====================
+Create Mongoose models:
+- User (name, email, password, role, department)
+- Attendance (userId, date, checkIn, checkOut, hours)
+- Leave (userId, type, startDate, endDate, status)
+
+=====================
+API STRUCTURE
+=====================
+/api/auth
+/api/users
+/api/attendance
+/api/leaves
+/api/dashboard
+
+Use controllers + routes + middleware structure.
+
+=====================
+FRONTEND STRUCTURE
+=====================
+/src
+  /components
+  /pages
+  /redux
+  /services
+  /utils
+
+Pages:
+- Login
+- Dashboard
+- Employees
+- Attendance
+- Leaves
+- Profile
+
+Reusable UI components:
+- Sidebar
+- Navbar
+- ProtectedRoute
+- RoleGuard
+
+=====================
+UI REQUIREMENTS
+=====================
+- Dark theme
+- Modern dashboard layout
+- Sidebar navigation
+- Cards for analytics
+- Responsive (mobile + desktop)
+
+=====================
+DELIVERABLES
+=====================
+1. Backend folder with working API
+2. Frontend folder with connected UI
+3. MongoDB connection setup
+4. JWT auth fully working
+5. Basic seed admin user
+6. Clear README with run instructions
+
+=====================
+IMPORTANT
+=====================
+- Write clean, readable code
+- Use environment variables
+- No dummy placeholders — functional logic required
+- Project must run inside Replit environment
+- Use localhost MongoDB or MongoDB Atlas
+
+Now generate the FULL PROJECT STRUCTURE and IMPLEMENTATION.
