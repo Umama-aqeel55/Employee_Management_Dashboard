@@ -67,8 +67,8 @@
   --popover: 224 71% 4%;
   --popover-foreground: 215 20.2% 65.1%;
   
-  --primary: 263 70% 50%; /* Deep Purple */
-  --primary-foreground: 210 40% 98%;
+  --primary: 180 100% 50%; /* Brand Cyan */
+  --primary-foreground: 222.2 47.4% 11.2%;
   
   --secondary: 222 47% 11%;
   --secondary-foreground: 210 40% 98%;
@@ -76,32 +76,32 @@
   --muted: 223 47% 11%;
   --muted-foreground: 215 20.2% 65.1%;
   
-  --accent: 216 34% 17%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 180 100% 50%;
+  --accent-foreground: 222.2 47.4% 11.2%;
   
   --destructive: 0 63% 31%;
   --destructive-foreground: 210 40% 98%;
   
   --border: 216 34% 17%;
   --input: 216 34% 17%;
-  --ring: 263 70% 50%;
+  --ring: 180 100% 50%;
   
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   
-  --chart-1: 263 70% 50%;
-  --chart-2: 280 65% 60%;
-  --chart-3: 295 60% 70%;
-  --chart-4: 310 55% 80%;
-  --chart-5: 325 50% 90%;
+  --chart-1: 180 100% 50%;
+  --chart-2: 190 90% 60%;
+  --chart-3: 200 80% 70%;
+  --chart-4: 210 70% 80%;
+  --chart-5: 220 60% 90%;
   
   --sidebar: 224 71% 4%;
   --sidebar-foreground: 240 5% 64.9%;
-  --sidebar-primary: 263 70% 50%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 216 34% 17%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 180 100% 50%;
+  --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+  --sidebar-accent: 180 100% 50%;
+  --sidebar-accent-foreground: 222.2 47.4% 11.2%;
   --sidebar-border: 216 34% 17%;
-  --sidebar-ring: 263 70% 50%;
+  --sidebar-ring: 180 100% 50%;
 }
 
 @layer base {

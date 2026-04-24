@@ -15,7 +15,15 @@ import NotFound from "@/pages/not-found";
 
 // Protected Route Wrapper
 function ProtectedRoute({ component: Component, roles = [] }: { component: any, roles?: string[] }) {
-  const { currentUser } = useApp();
+  const { currentUser, loading } = useApp();
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#020817]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
 
   if (!currentUser) return <Redirect to="/login" />;
   if (roles.length > 0 && !roles.includes(currentUser.role)) return <Redirect to="/" />;
