@@ -3,7 +3,7 @@
 NexusHR is a premium, high-performance Human Resource Management System (HRMS) designed for modern enterprises. It features a futuristic "Agentic" UI with glassmorphism aesthetics, real-time data synchronization via Firebase, and robust role-based access control.
 
 ## 🚀 Live Demo
-[Insert Live Link Here]
+https://employee-management-dashboard-uyoh-hv201zn15.vercel.app/login
 
 ## ✨ Key Features
 
