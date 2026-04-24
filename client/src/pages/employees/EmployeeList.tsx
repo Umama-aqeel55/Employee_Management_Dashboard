@@ -140,7 +140,7 @@ export default function EmployeeList() {
       </div>
 
       {/* Table Container */}
-      <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden shadow-2xl">
+      <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-x-auto shadow-2xl">
         <Table>
           <TableHeader className="bg-white/5">
             <TableRow className="hover:bg-transparent border-white/10">

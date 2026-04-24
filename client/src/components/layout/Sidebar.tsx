@@ -80,7 +80,10 @@ export function Sidebar({ onNavClick }: { onNavClick?: () => void }) {
           </div>
         </div>
         <button 
-          onClick={logout}
+          onClick={() => {
+            logout();
+            onNavClick?.();
+          }}
           className="w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-destructive/80 hover:text-destructive hover:bg-destructive/10 transition-all duration-300"
         >
           <LogOut className="w-4 h-4" />

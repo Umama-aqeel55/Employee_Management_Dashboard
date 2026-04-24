@@ -24,18 +24,20 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
 
       {/* Sidebar - Mobile Drawer */}
       <div className={`
-        fixed inset-y-0 left-0 w-72 bg-sidebar z-[70] lg:hidden transform transition-transform duration-300 ease-in-out
-        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
+        fixed inset-y-0 left-0 w-72 bg-sidebar z-[70] lg:hidden transform transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1)
+        ${isMobileMenuOpen ? 'translate-x-0 shadow-[0_0_50px_rgba(0,0,0,0.5)]' : '-translate-x-full'}
       `}>
-        <Sidebar onNavClick={() => setIsMobileMenuOpen(false)} />
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          className="absolute top-4 -right-12 text-white hover:bg-white/10"
-          onClick={() => setIsMobileMenuOpen(false)}
-        >
-          <X className="w-6 h-6" />
-        </Button>
+        <div className="h-full relative">
+          <Sidebar onNavClick={() => setIsMobileMenuOpen(false)} />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="absolute top-4 right-4 text-white/50 hover:text-white hover:bg-white/10 lg:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <X className="w-5 h-5" />
+          </Button>
+        </div>
       </div>
 
       <div className="flex-1 flex flex-col min-h-screen transition-all duration-300 ease-in-out lg:ml-64">
